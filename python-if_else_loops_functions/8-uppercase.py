@@ -3,7 +3,7 @@
 
 def uppercase(str):
     for i in str:
-        print(chr(upChar(i)), end="")
+        print("{}".format(chr(upChar(i))), end="")
     print("")
 
 
