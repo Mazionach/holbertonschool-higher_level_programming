@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 def add_tuple(tuple_a=(), tuple_b=()):
-    c = []
+    c = list()
     a = tuple_a
     b = tuple_b
     if len(a) < 1 and len(b) < 1:
