@@ -17,19 +17,19 @@ class Square:
         Args:
             size: the size of the square
         """
-        self.size(size)
+        self.size = size
 
     @property
-    def size(self):
+    def __size(self):
         """ Size of the square
 
         The length of the side of the square,
         must be a positive integer
         """
-        return size
+        return self.size
 
     @size.setter
-    def size(self, size):
+    def __size(self, size):
         if size is not None:
             if type(size) is not int:
                 raise TypeError("size must be an integer")
