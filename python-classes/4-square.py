@@ -20,6 +20,11 @@ class Square:
         self.size(size)
 
     def size(self, size):
+        """Sets the size of the square
+
+        The size must be a positive int,
+        else an error will be raised
+        """
         if type(size) is not int:
             raise TypeError("size must be an integer")
         if size < 0:
