@@ -17,10 +17,10 @@ class Square:
         Args:
             size: the size of the square
         """
-        self.size = size
+        self.size(size)
 
     @property
-    def __size(self):
+    def size(self):
         """ Size of the square
 
         The length of the side of the square,
@@ -28,8 +28,8 @@ class Square:
         """
         return self.size
 
-    @size.setter
-    def __size(self, size):
+    @__size.setter
+    def size(self, size):
         if size is not None:
             if type(size) is not int:
                 raise TypeError("size must be an integer")
