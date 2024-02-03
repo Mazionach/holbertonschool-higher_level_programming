@@ -22,5 +22,5 @@ def list_division(my_list_1, my_list_2, list_length):
             print("division by 0")
             continue
         finally:
-        n[i] = v
+            n[i] = v
     return n
