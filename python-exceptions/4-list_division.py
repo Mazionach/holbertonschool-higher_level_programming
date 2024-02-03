@@ -21,10 +21,10 @@ def list_division(my_list_1, my_list_2, list_length):
             v = d1 / d2
         except TypeError:
             print("wrong type")
-            continue
+            v = 0
         except ZeroDivisionError:
             print("division by 0")
-            continue
+            v = 0
         finally:
             n[i] = v
     return n
