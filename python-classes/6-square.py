@@ -61,7 +61,9 @@ class Square:
 
         If size is 0, print empty line
         """
-
+        if self.size == 0:
+            print("")
+            return
         for y in range(self.position[1]):
             print("")
         for i in range(self.size):
@@ -69,9 +71,4 @@ class Square:
                 print(" ", end="")
             for j in range(self.size):
                 print("#", end="")
-            print("")
-
-        if self.position == 0:
-            for x in range(self.position[0]):
-                print(" ", end="")
             print("")
