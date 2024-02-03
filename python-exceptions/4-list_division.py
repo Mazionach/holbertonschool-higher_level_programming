@@ -10,17 +10,16 @@ def list_division(my_list_1, my_list_2, list_length):
         try:
             d1, d2 = my_list_1[i], my_list_2[i]
         except Exception:
-            d1, d2 = 0, 1
             print("out of range")
+            continue
 
         try:
             v = d1 / d2
         except TypeError:
             print("wrong type")
-            v = 0
+            continue
         except ZeroDivisionError:
             print("division by 0")
-            v = 0
-        finally:
-            n[i] = v
+            continue
+        n[i] = v
     return n
