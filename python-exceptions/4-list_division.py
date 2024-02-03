@@ -2,11 +2,15 @@
 
 def list_division(my_list_1, my_list_2, list_length):
     n = []
+    try:
+        range(list_length)
+    except Exception:
+        return n
+
     for i in range(list_length):
         n.append(0)
 
     for i in range(list_length):
-        err = 0
         try:
             d1, d2 = my_list_1[i], my_list_2[i]
         except Exception:
