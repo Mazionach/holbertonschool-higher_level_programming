@@ -19,6 +19,11 @@ class Square:
         """
         self.size(size)
 
+    def size(self):
+        """Retrieves the size of the square
+        """
+        return self.__size
+
     def size(self, size):
         """Sets the size of the square
 
