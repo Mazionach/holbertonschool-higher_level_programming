@@ -19,15 +19,17 @@ class Square:
         """
         self.size(size)
 
-    def size(self, size=None):
-        """Sets or gets the size of the square
+    @property
+    def size(self):
+        """ Size of the square
 
-        The size must be a positive int,
-        else an error will be raised
-
-        Args:
-            size: the size of the square
+        The length of the side of the square,
+        must be a positive integer
         """
+        return size
+
+    @size.setter
+    def size(self, size):
         if size is not None:
             if type(size) is not int:
                 raise TypeError("size must be an integer")
