@@ -9,6 +9,8 @@ This module defines and handles a square shape
 
 class Square:
     """ Square class
+
+    Defines a square with a side length and a 2D position
     """
 
     def __init__(self, size=0, position=(0, 0)):
@@ -16,6 +18,7 @@ class Square:
 
         Args:
             size: the size of the square
+            position: 2D position of the square
         """
         self.size = size
         self.position = position
