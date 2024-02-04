@@ -62,6 +62,8 @@ class Square:
         If size is 0, print empty line
         """
         if self.size == 0:
+            for y in range(self.position[1]):
+                print("")
             print("")
             return
         for y in range(self.position[1]):
