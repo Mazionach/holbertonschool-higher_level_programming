@@ -1,0 +1,17 @@
+
+
+	>>>add_integer()
+	Traceback (most recent call last):
+		...
+	TypeError: a must be an integer
+
+	>>>add_integer(0, "h")
+	Traceback (most recent call last):
+		...
+	TypeError: b must be an integer
+
+	>>>add_integer(2)
+	100
+
+	>>>add_integer(2.3, 3)
+	5
