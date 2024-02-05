@@ -11,6 +11,17 @@
 		...
 	TypeError: a must be an integer
 
+	>>> add_integer(None, 8)
+	Traceback (most recent call last):
+		...
+	TypeError: a must be an integer
+
+
+	>>> add_integer(15, None)
+	Traceback (most recent call last):
+		...
+	TypeError: a must be an integer
+
 	>>> add_integer("A")
 	Traceback (most recent call last):
 		...
