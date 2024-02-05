@@ -8,7 +8,7 @@ This module defines a rectangle class
 
 class Rectangle:
     """ Rectangle class
-    
+
     Has a width and height
     """
     def __init__(self, width=0, height=0):
@@ -32,7 +32,6 @@ class Rectangle:
 
         self.__width = value
 
-
     @property
     def height(self):
         """ Height property
@@ -47,4 +46,4 @@ class Rectangle:
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
-        self.__width = value
+        self.__height = value
