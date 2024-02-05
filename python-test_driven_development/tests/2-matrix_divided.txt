@@ -79,3 +79,10 @@
 	...
 	TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
 
+
+	>>> my_matrix = [[2, 4, 6]]
+	>>> matrix_divided(my_matrix, 2)
+	[[1.0, 2.0, 3.0]]
+	>>> my_matrix
+	[[2, 4, 6]]
+

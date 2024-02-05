@@ -25,7 +25,7 @@ def matrix_divided(matrix, div):
     if div == 0:
         raise ZeroDivisionError("division by zero")
 
-    new = matrix.copy()
+    new = [r[:] for r in matrix]
 
     for r in range(len(matrix)):
         for i in range(len(matrix[0])):
