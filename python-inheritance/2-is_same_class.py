@@ -3,6 +3,7 @@
 """ Same class function
 
 tests for same class
+not inheritance
 """
 
 
