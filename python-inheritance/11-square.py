@@ -30,4 +30,4 @@ class Square(Rectangle):
         return super().area()
 
     def __str__(self):
-        return "[Square] {}/{}".format(self.__width, self.__height)
+        return "[Square] {}/{}".format(self.__size, self.__size)
