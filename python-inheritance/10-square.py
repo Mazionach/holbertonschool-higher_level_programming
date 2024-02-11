@@ -9,7 +9,7 @@ defines a square
 Rectangle = __import__('9-rectangle.py').Rectangle
 
 
-def Square(Rectangle):
+class Square(Rectangle):
     """
     Square class
     Based on rectangle
