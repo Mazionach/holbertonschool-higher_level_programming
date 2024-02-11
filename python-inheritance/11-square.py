@@ -28,3 +28,6 @@ class Square(Rectangle):
         """ Area of square
         same as rectangle """
         return super().area()
+
+    def __str__(self):
+        return "[Square] {}/{}".format(self.__width, self.height)
