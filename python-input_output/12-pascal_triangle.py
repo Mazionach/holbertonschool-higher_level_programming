@@ -5,6 +5,9 @@
 
 
 def pascal_triangle(n):
+    """ Returns a pascal triangle of n rows
+    in list of lists form
+    """
     r = []
     for row in range(n):
         if row == 0:
