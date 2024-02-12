@@ -5,7 +5,7 @@ Appending to a simple file
 """
 
 
-def append_file(filename="", text=""):
+def append_write(filename="", text=""):
     """ Writes to file
     Extends existing file
     """
