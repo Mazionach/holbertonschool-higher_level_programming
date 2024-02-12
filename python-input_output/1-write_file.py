@@ -10,4 +10,4 @@ def write_file(filename="", text=""):
     Creates if doesnt exists, overwrites otherwise
     """
     with open(filename, "w", encoding='utf-8') as f:
-        f.write(text)
+        f.write(str(text))
