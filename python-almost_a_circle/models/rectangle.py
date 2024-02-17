@@ -53,19 +53,33 @@ class Rectangle(Base):
     def x(self, value):
         if not isinstance(value, int):
             raise TypeError("x must be an integer")
-        if value <= 0:
-            raise ValueError("x must be > 0")
+        if value < 0:
+            raise ValueError("x must be >= 0")
         self.__x = value
 
     @property
     def y(self):
         """ Y position of rectangle """
-        return self.__x
+        return self.__y
 
     @y.setter
     def y(self, value):
         if not isinstance(value, int):
             raise TypeError("y must be an integer")
-        if value <= 0:
-            raise ValueError("y must be > 0")
+        if value < 0:
+            raise ValueError("y must be >= 0")
         self.__y = value
+
+    def area(self):
+        """ Calculate area of rectangle """
+        return self.width * self.height
+
+    def __str__(self):
+        """ String representation of rectangle """
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, slef.x, self.y,
+                                                       self.width, self.height)
+
+    def display(self):
+        """ Draw rectangle with text """
+        print("\n" * self.y, end="")
+        print(((" " * self.x + "#" * self.width + "\n") * self.height)[:-1])
