@@ -4,8 +4,7 @@
 Rectangle module
 """
 
-
-from base import Base
+Base = __import__('base').Base
 
 
 class Rectangle(Base):
