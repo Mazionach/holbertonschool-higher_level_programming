@@ -8,8 +8,10 @@ from base import Base
 
 
 class Rectangle(Base):
+    """ Rectangle subclass of Base shape """
 
     def __init__(self, width, height, x=0, y=0, id=None):
+        """ Rectange adds W, H, x and y properties """
         super().__init__(id)
         self.width = width
         self.height = height
@@ -18,36 +20,36 @@ class Rectangle(Base):
 
     @property
     def width(self):
+        """ Width of rectangle """
         return self.__width
 
     @width.setter
     def width(self, value):
-        """ Width of rectangle """
         self.__width = value
 
     @property
     def height(self):
+        """ Height of rectangle """
         return self.__height
 
     @height.setter
     def height(self, value):
-        """ Height of rectangle """
         self.__height = value
 
     @property
     def x(self):
+        """ X position of rectangle """
         return self.__x
 
     @x.setter
     def x(self, value):
-        """ X position of rectangle """
         self.__x = value
 
     @property
     def y(self):
+        """ Y position of rectangle """
         return self.__x
 
     @y.setter
     def y(self, value):
-        """ Y position of rectangle """
         self.__y = value
