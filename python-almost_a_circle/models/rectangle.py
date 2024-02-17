@@ -84,7 +84,7 @@ class Rectangle(Base):
         print("\n" * self.y, end="")
         print(((" " * self.x + "#" * self.width + "\n") * self.height)[:-1])
 
-    def update(self. *args):
+    def update(self, *args):
         """ Update rectangle parameters """
         if len(args) > 0:
             self.id = args[0]
