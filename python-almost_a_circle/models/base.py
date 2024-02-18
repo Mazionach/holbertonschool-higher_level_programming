@@ -41,4 +41,4 @@ class Base():
             jl = []
             for elem in list_objs:
                 jl.append(elem.to_dictionary())
-            f.write(jl)
+            f.write(cls.to_json_string(jl))
