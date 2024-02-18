@@ -5,6 +5,9 @@ Base class for shapes
 """
 
 
+import json
+
+
 class Base():
     """
     Base class for shape objects
@@ -19,3 +22,11 @@ class Base():
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
+
+    @staticmethod
+    def to_json_string(list_dictionaries):
+        """ Convert list of dictionaries to JSON """
+        if list_dictionaries is None or len(list_dictionaries) == 0:
+            return "[]"
+
+        return json.dumps(list_dictionaries)
