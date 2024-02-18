@@ -42,3 +42,11 @@ class Base():
             for elem in list_objs:
                 jl.append(elem.to_dictionary())
             f.write(cls.to_json_string(jl))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """ Converts JSON to list of dicitonaries """
+        if not json_string:
+            return []
+
+        return json.loads(json_string)
