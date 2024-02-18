@@ -19,3 +19,14 @@ class Square(Rectangle):
         """ Write square data """
         return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y,
                                                  self.width)
+
+    @property
+    def size(self):
+        """ Asigns both W and H """
+        return self.width
+
+    @size.setter
+    def size(self, value):
+        self.width = value
+        self.height = value
+
