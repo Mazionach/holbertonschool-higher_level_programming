@@ -41,4 +41,4 @@ class Base():
             jl = []
             for elem in list_objs:
                 jl.append(elem.to_dictionary())
-            file.write(jl)
+            f.write(jl)
