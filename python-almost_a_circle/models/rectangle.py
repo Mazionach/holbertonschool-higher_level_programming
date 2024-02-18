@@ -87,8 +87,8 @@ class Rectangle(Base):
     def update(self, *args, **kwargs):
         """ Update rectangle parameters """
         if not args:
-            for key, val in kwargs:
-                settatr(self, key, val)
+            for key, val in kwargs.items():
+                setattr(self, key, val)
         else:
             self.id = args[0]
             if len(args) > 1:
