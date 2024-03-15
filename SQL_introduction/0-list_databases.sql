@@ -1,4 +1,4 @@
 -- List all databases
 -- first query
-SELECT name FROM sys.databases;
+SELECT * FROM sys.databases;
 
