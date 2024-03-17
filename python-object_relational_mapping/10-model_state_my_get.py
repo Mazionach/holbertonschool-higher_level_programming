@@ -20,7 +20,7 @@ if __name__ == "__main__":
     session = sescla()
 
     if (s := session.query(State).order_by(State.id).filter(
-        State.name == sys.argv[4]).first()) is not None:
+            State.name == sys.argv[4]).first()) is not None:
         print(s.id)
     else:
         print("Not found")
