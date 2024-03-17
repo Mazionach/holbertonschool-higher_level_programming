@@ -25,8 +25,8 @@ if __name__ == "__main__":
     r = ""
     if len(states) > 1:
         for i in range(len(states) - 1):
-            r = r + states[i] + ", "
+            r = r + states[i][1] + ", "
     if len(states) != 0:
-        r = r + states[-1]
+        r = r + states[-1][1]
 
     print(r)
