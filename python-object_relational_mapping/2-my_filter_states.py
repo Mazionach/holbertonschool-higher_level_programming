@@ -19,7 +19,7 @@ if __name__ == "__main__":
                 WHERE name LIKE BINARY '{arg}' \
                 ORDER BY states.id ASC")
 
-    states = cursor.fetchall()
+    states = cur.fetchall()
 
     for s in states:
         print(s)
